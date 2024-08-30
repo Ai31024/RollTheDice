@@ -19,38 +19,39 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="main-container" class="container text-center">
-      <h1 id="heading-text" class="custom-color lobster-two-bold">
-        Dice Game!
-      </h1>
-      <div class="row">
-        <div id="dice-1" class="col-4 text-center">
-          <p class="custom-color lobster-two-bold custom-size">Player 1</p>
-          <img id="dice-player-1" src="./media/dice6.png" alt="Dice Image" />
-          <p id="score-1" class="custom-color">0</p>
+    <header>
+      <div id="main-container" class="container text-center">
+        <h1 id="heading-text" class="custom-color lobster-two-bold">
+          Dice Game!
+        </h1>
+        <div class="row">
+          <div id="dice-1" class="col-6 col-sm-4 text-center mb-3 mb-sm-0">
+            <p class="custom-color lobster-two-bold custom-size">Player 1</p>
+            <img id="dice-player-1" src="./media/dice6.png" alt="Dice Image" />
+            <p id="score-1" class="custom-color">0</p>
+          </div>
+          <div
+            id="resultBox"
+            class="col-12 col-sm-6 d-flex justify-content-center align-items-center lobster-two-regular mb-3 mb-sm-0"
+          >
+            <p id="resultDice" class="custom-color"></p>
+          </div>
+          <div id="dice-2" class="col-6 col-sm-4 text-center">
+            <p class="custom-color lobster-two-bold custom-size">Player 2</p>
+            <img id="dice-player-2" src="./media/dice6.png" alt="Dice Image" />
+            <p id="score-2" class="custom-color">0</p>
+          </div>
         </div>
-        <div
-          id="resultBox"
-          class="col-4 d-flex justify-content-center align-items-center lobster-two-regular"
+        <button
+          id="roll-dice-btn"
+          class="btn btn-primary mt-3 lobster-two-regular"
         >
-          <p id="resultDice" class="custom-color"></p>
-        </div>
-        <div id="dice-2" class="col-4 text-center">
-          <p class="custom-color lobster-two-bold custom-size">Player 2</p>
-          <img id="dice-player-2" src="./media/dice6.png" alt="Dice Image" />
-          <p id="score-2" class="custom-color">0</p>
-        </div>
+          Roll Dice
+        </button>
       </div>
-      <button
-        id="roll-dice-btn"
-        class="btn btn-primary mt-3 lobster-two-regular"
-      >
-        Roll Dice
-      </button>
-    </div>
-    <br />
-    <footer class="text-center custom-color lobster-two-bold">
-      &copy 2024 <a href="https://github.com/Ai31024">Ai31024</a>
+    </header>
+    <footer class="text-center custom-color lobster-two-bold mt-3">
+      &copy; 2024 <a href="https://github.com/Ai31024">Ai31024</a>
     </footer>
 
     <script src="./script.js"></script>
