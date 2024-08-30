@@ -22,7 +22,7 @@ function getRandomNumber() {
   } else if (randomNumber1 < randomNumber2) {
     diceResult = "Player 2 Wins! 👑";
   } else {
-    diceResult = "✌ It's a Draw! ✌";
+    diceResult = "🎲 It's a Draw! 🎲";
   }
 }
 
