@@ -1,140 +1,125 @@
-/* General Styling */
+/* General Styling for the body and layout */
 body {
-  /* Background color and font settings for the entire page */
-  background-color: #3d3d49; /* Dark gray background */
-  font-family: Arial, sans-serif; /* Basic sans-serif font */
+  background-color: #3d3d49; /* Dark background color for contrast */
+  font-family: Arial, sans-serif; /* Default font family */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
 
-/* Header and Footer Styling */
-header, footer {
-  /* Padding for header and footer sections */
-  padding: 10px 0; /* Vertical padding */
+/* Styling for the main heading */
+h1 {
+  font-size: 3rem; /* Large font size for prominence */
+  font-weight: bold;
+  color: #65bf97; /* Custom green color for the heading */
+  text-align: center;
+  margin-top: 50px; /* Space between the top of the page and the heading */
 }
 
-/* Heading Styling */
-h1 {
-  /* Styling for the main heading */
-  font-size: 2.5rem; /* Font size adjusted for better mobile view */
-  font-weight: bold; /* Bold text */
-  color: #65bf97; /* Custom color */
-  margin-top: 20px; /* Space above the heading */
+/* Custom size class to adjust font size for player labels */
+.custom-size {
+  font-size: 2rem; /* Adjust font size to emphasize player names */
 }
 
 /* Custom Color Class */
 .custom-color {
-  /* Custom color class used for various elements */
-  color: #65bf97; /* Custom color */
-  font-weight: bold; /* Bold text */
+  color: #65bf97; /* Set text color to match theme */
+  font-weight: bold;
 }
 
-/* Dice Container Styling */
+/* Styling for the dice container (Player 1 & Player 2) */
 #dice-1,
 #dice-2 {
-  /* Center alignment for dice containers */
-  text-align: center; /* Center text and images */
+  text-align: center; /* Center text and elements in the dice containers */
 }
 
+/* Styling for dice images for both players */
 #dice-1 img,
 #dice-2 img {
-  /* Styling for dice images */
-  width: 100px; /* Adjusted size for mobile view */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 10px; /* Space above the dice image */
+  width: 120px; /* Adjust the dice image size */
+  height: auto; /* Maintain aspect ratio of the dice image */
+  margin-top: 20px; /* Space between player name and dice image */
 }
 
-/* Score Styling */
+/* Styling for the score display of both players */
 #score-1,
 #score-2 {
-  /* Styling for score text */
-  font-size: 1.5rem; /* Adjusted font size for mobile view */
-  color: #65bf97; /* Custom color */
-  margin-top: 5px; /* Space above the score text */
+  font-size: 2rem; /* Set larger font size for player scores */
+  color: #65bf97; /* Set text color to match theme */
+  margin-top: 10px; /* Space between the dice image and the score */
 }
 
-/* Result Box Styling */
+/* Styling for the result box (e.g., to display winner) */
 #resultBox {
-  /* Styling for the result box */
-  font-size: 2rem; /* Adjusted font size for mobile view */
-  font-weight: bold; /* Bold text */
-  color: #65bf97; /* Custom color */
+  font-size: 2.5rem; /* Larger font size for emphasis on result */
+  font-weight: bold;
+  color: #65bf97; /* Set text color to match theme */
 }
 
-/* Button Styling */
+/* Styling for the roll dice button */
 #roll-dice-btn {
-  /* Styling for the roll dice button */
-  background-color: #65bf97; /* Custom background color */
-  color: #3d3d49; /* Custom text color */
+  background-color: #65bf97; /* Green background to match theme */
+  color: #3d3d49; /* Dark text color for contrast */
   border: none; /* Remove default border */
-  font-size: 1.2rem; /* Adjusted font size for mobile view */
-  font-weight: bold; /* Bold text */
-  padding: 12px 24px; /* Adjusted padding for mobile view */
-  margin-top: 20px; /* Space above the button */
-  border-radius: 10px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+  font-size: 1.5rem; /* Larger font size for readability */
+  font-weight: bold;
+  padding: 10px 20px; /* Padding around the button for better spacing */
+  margin-top: 30px; /* Space above the button */
+  border-radius: 10px; /* Rounded corners for modern look */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth color change on hover */
 }
 
+/* Hover effect for the roll dice button */
 #roll-dice-btn:hover {
-  /* Hover effect for the button */
-  background-color: #58a47e; /* Slightly darker background color on hover */
+  background-color: #58a47e; /* Slightly darker green when hovered */
 }
 
-#roll-dice-btn:focus {
-  /* Focus effect for the button */
-  outline: 2px solid #58a47e; /* Outline color when focused */
-  outline-offset: 4px; /* Space between the outline and the button */
-}
-
-/* Responsive Design */
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
-  /* Styles for screens smaller than or equal to 768px (mobile view) */
-  
+  /* Adjust heading size for smaller screens */
   h1 {
-    font-size: 2rem; /* Smaller font size for mobile view */
+    font-size: 2.5rem;
   }
 
+  /* Adjust result box font size for smaller screens */
   #resultBox {
-    font-size: 1.5rem; /* Smaller font size for mobile view */
+    font-size: 2rem;
   }
 
+  /* Adjust button font size for smaller screens */
   #roll-dice-btn {
-    font-size: 1rem; /* Smaller font size for mobile view */
-    padding: 10px 20px; /* Adjusted padding for mobile view */
+    font-size: 1.2rem;
   }
 
+  /* Reduce the dice image size for smaller screens */
   #dice-1 img,
   #dice-2 img {
-    width: 80px; /* Smaller dice size for mobile view */
+    width: 90px;
   }
 }
 
-/* Lobster Two Font Styles */
+/* Font family classes using the Lobster Two font */
 .lobster-two-regular {
-  /* Regular style for Lobster Two font */
-  font-family: "Lobster Two", sans-serif; /* Lobster Two font */
-  font-weight: 400; /* Normal weight */
-  font-style: normal; /* Normal style */
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .lobster-two-bold {
-  /* Bold style for Lobster Two font */
-  font-family: "Lobster Two", sans-serif; /* Lobster Two font */
-  font-weight: 700; /* Bold weight */
-  font-style: normal; /* Normal style */
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
+/* Italic variations of the Lobster Two font */
 .lobster-two-regular-italic {
-  /* Italic style for Lobster Two font */
-  font-family: "Lobster Two", sans-serif; /* Lobster Two font */
-  font-weight: 400; /* Normal weight */
-  font-style: italic; /* Italic style */
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .lobster-two-bold-italic {
-  /* Bold and italic style for Lobster Two font */
-  font-family: "Lobster Two", sans-serif; /* Lobster Two font */
-  font-weight: 700; /* Bold weight */
-  font-style: italic; /* Italic style */
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }

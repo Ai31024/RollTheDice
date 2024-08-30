@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Character encoding for the document -->
     <meta charset="UTF-8" />
-
-    <!-- Viewport settings for responsive design on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Title of the web page displayed on the browser tab -->
     <title>Random Dice Game</title>
 
-    <!-- Link to Bootstrap CSS for responsive layout and styling -->
+    <!-- Bootstrap CSS for layout and styling -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,69 +13,74 @@
       crossorigin="anonymous"
     />
 
-    <!-- Preconnect to Google Fonts for faster loading -->
+    <!-- Preconnecting to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Link to custom font (Lobster Two) from Google Fonts -->
+    <!-- Custom Google Font (Lobster Two) -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Link to the custom stylesheet for additional styling -->
+    <!-- External custom CSS file -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Header section containing the main content of the page -->
-    <header>
-      <div id="main-container" class="container text-center">
-        <!-- Main heading of the page -->
-        <h1 id="heading-text" class="custom-color lobster-two-bold">
-          Dice Game!
-        </h1>
+    <!-- Main container for the dice game -->
+    <div id="main-container" class="container text-center">
+      <!-- Main heading of the game -->
+      <h1 id="heading-text" class="custom-color lobster-two-bold">
+        Dice Game!
+      </h1>
 
-        <!-- Container for the dice game components -->
-        <div class="row">
-          <!-- Dice and score section for Player 1 -->
-          <div id="dice-1" class="col-6 col-sm-4 text-center mb-3 mb-sm-0">
-            <p class="custom-color lobster-two-bold custom-size">Player 1</p>
-            <img id="dice-player-1" src="./media/dice6.png" alt="Dice Image" />
-            <p id="score-1" class="custom-color">0</p>
-          </div>
-
-          <!-- Result box displaying the outcome of the dice roll -->
-          <div
-            id="resultBox"
-            class="col-12 col-sm-6 d-flex justify-content-center align-items-center lobster-two-regular mb-3 mb-sm-0"
-          >
-            <p id="resultDice" class="custom-color"></p>
-          </div>
-
-          <!-- Dice and score section for Player 2 -->
-          <div id="dice-2" class="col-6 col-sm-4 text-center">
-            <p class="custom-color lobster-two-bold custom-size">Player 2</p>
-            <img id="dice-player-2" src="./media/dice6.png" alt="Dice Image" />
-            <p id="score-2" class="custom-color">0</p>
-          </div>
+      <!-- Row for player sections and result box -->
+      <div class="row">
+        <!-- Player 1's section -->
+        <div id="dice-1" class="col-4 text-center">
+          <p class="custom-color lobster-two-bold custom-size">Player 1</p>
+          <!-- Placeholder image for Player 1's dice -->
+          <img id="dice-player-1" src="./media/dice6.png" alt="Dice Image" />
+          <!-- Score display for Player 1 -->
+          <p id="score-1" class="custom-color">0</p>
         </div>
 
-        <!-- Button to roll the dice -->
-        <button
-          id="roll-dice-btn"
-          class="btn btn-primary mt-3 lobster-two-regular"
+        <!-- Middle section to display game result -->
+        <div
+          id="resultBox"
+          class="col-4 d-flex justify-content-center align-items-center lobster-two-regular"
         >
-          Roll Dice
-        </button>
-      </div>
-    </header>
+          <!-- Result text placeholder (e.g., winner announcement) -->
+          <p id="resultDice" class="custom-color"></p>
+        </div>
 
-    <!-- Footer section with copyright information -->
-    <footer class="text-center custom-color lobster-two-bold mt-3">
+        <!-- Player 2's section -->
+        <div id="dice-2" class="col-4 text-center">
+          <p class="custom-color lobster-two-bold custom-size">Player 2</p>
+          <!-- Placeholder image for Player 2's dice -->
+          <img id="dice-player-2" src="./media/dice6.png" alt="Dice Image" />
+          <!-- Score display for Player 2 -->
+          <p id="score-2" class="custom-color">0</p>
+        </div>
+      </div>
+
+      <!-- Button to roll the dice and trigger the game -->
+      <button
+        id="roll-dice-btn"
+        class="btn btn-primary mt-3 lobster-two-regular"
+      >
+        Roll Dice
+      </button>
+    </div>
+
+    <br />
+
+    <!-- Footer section with credits -->
+    <footer class="text-center custom-color lobster-two-bold">
       &copy; 2024 <a href="https://github.com/Ai31024">Ai31024</a>
     </footer>
 
-    <!-- Link to the JavaScript file for functionality -->
+    <!-- External custom JavaScript file for game logic -->
     <script src="./script.js"></script>
   </body>
 </html>
