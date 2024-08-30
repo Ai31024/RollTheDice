@@ -1,123 +1,140 @@
 /* General Styling */
 body {
-  background-color: #3d3d49;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  /* Background color and font settings for the entire page */
+  background-color: #3d3d49; /* Dark gray background */
+  font-family: Arial, sans-serif; /* Basic sans-serif font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 /* Header and Footer Styling */
-header,
-footer {
-  padding: 10px 0;
+header, footer {
+  /* Padding for header and footer sections */
+  padding: 10px 0; /* Vertical padding */
 }
 
 /* Heading Styling */
 h1 {
-  font-size: 2.5rem; /* Adjusted for better mobile view */
-  font-weight: bold;
-  color: #65bf97;
-  margin-top: 20px;
+  /* Styling for the main heading */
+  font-size: 2.5rem; /* Font size adjusted for better mobile view */
+  font-weight: bold; /* Bold text */
+  color: #65bf97; /* Custom color */
+  margin-top: 20px; /* Space above the heading */
 }
 
 /* Custom Color Class */
 .custom-color {
-  color: #65bf97;
-  font-weight: bold;
+  /* Custom color class used for various elements */
+  color: #65bf97; /* Custom color */
+  font-weight: bold; /* Bold text */
 }
 
 /* Dice Container Styling */
 #dice-1,
 #dice-2 {
-  text-align: center;
+  /* Center alignment for dice containers */
+  text-align: center; /* Center text and images */
 }
 
 #dice-1 img,
 #dice-2 img {
-  width: 100px; /* Adjusted for mobile view */
-  height: auto;
-  margin-top: 10px;
+  /* Styling for dice images */
+  width: 100px; /* Adjusted size for mobile view */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px; /* Space above the dice image */
 }
 
 /* Score Styling */
 #score-1,
 #score-2 {
-  font-size: 1.5rem; /* Adjusted for mobile view */
-  color: #65bf97;
-  margin-top: 5px;
+  /* Styling for score text */
+  font-size: 1.5rem; /* Adjusted font size for mobile view */
+  color: #65bf97; /* Custom color */
+  margin-top: 5px; /* Space above the score text */
 }
 
 /* Result Box Styling */
 #resultBox {
-  font-size: 2rem; /* Adjusted for mobile view */
-  font-weight: bold;
-  color: #65bf97;
+  /* Styling for the result box */
+  font-size: 2rem; /* Adjusted font size for mobile view */
+  font-weight: bold; /* Bold text */
+  color: #65bf97; /* Custom color */
 }
 
 /* Button Styling */
 #roll-dice-btn {
-  background-color: #65bf97;
-  color: #3d3d49;
-  border: none;
-  font-size: 1.2rem; /* Adjusted for mobile view */
-  font-weight: bold;
-  padding: 12px 24px; /* Adjusted for mobile view */
-  margin-top: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  /* Styling for the roll dice button */
+  background-color: #65bf97; /* Custom background color */
+  color: #3d3d49; /* Custom text color */
+  border: none; /* Remove default border */
+  font-size: 1.2rem; /* Adjusted font size for mobile view */
+  font-weight: bold; /* Bold text */
+  padding: 12px 24px; /* Adjusted padding for mobile view */
+  margin-top: 20px; /* Space above the button */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 #roll-dice-btn:hover {
-  background-color: #58a47e;
+  /* Hover effect for the button */
+  background-color: #58a47e; /* Slightly darker background color on hover */
 }
 
 #roll-dice-btn:focus {
-  outline: 2px solid #58a47e;
-  outline-offset: 4px;
+  /* Focus effect for the button */
+  outline: 2px solid #58a47e; /* Outline color when focused */
+  outline-offset: 4px; /* Space between the outline and the button */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Styles for screens smaller than or equal to 768px (mobile view) */
+  
   h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Smaller font size for mobile view */
   }
 
   #resultBox {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller font size for mobile view */
   }
 
   #roll-dice-btn {
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 1rem; /* Smaller font size for mobile view */
+    padding: 10px 20px; /* Adjusted padding for mobile view */
   }
 
   #dice-1 img,
   #dice-2 img {
-    width: 80px;
+    width: 80px; /* Smaller dice size for mobile view */
   }
 }
 
+/* Lobster Two Font Styles */
 .lobster-two-regular {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  /* Regular style for Lobster Two font */
+  font-family: "Lobster Two", sans-serif; /* Lobster Two font */
+  font-weight: 400; /* Normal weight */
+  font-style: normal; /* Normal style */
 }
 
 .lobster-two-bold {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  /* Bold style for Lobster Two font */
+  font-family: "Lobster Two", sans-serif; /* Lobster Two font */
+  font-weight: 700; /* Bold weight */
+  font-style: normal; /* Normal style */
 }
 
 .lobster-two-regular-italic {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+  /* Italic style for Lobster Two font */
+  font-family: "Lobster Two", sans-serif; /* Lobster Two font */
+  font-weight: 400; /* Normal weight */
+  font-style: italic; /* Italic style */
 }
 
 .lobster-two-bold-italic {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+  /* Bold and italic style for Lobster Two font */
+  font-family: "Lobster Two", sans-serif; /* Lobster Two font */
+  font-weight: 700; /* Bold weight */
+  font-style: italic; /* Italic style */
 }
