@@ -18,11 +18,11 @@ function getRandomNumber() {
   randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
   if (randomNumber1 > randomNumber2) {
-    diceResult = "Player 1 Wins!";
+    diceResult = "👑 Player 1 Wins!";
   } else if (randomNumber1 < randomNumber2) {
-    diceResult = "Player 2 Wins!";
+    diceResult = "Player 2 Wins! 👑";
   } else {
-    diceResult = "It's a Draw!";
+    diceResult = "✌ It's a Draw! ✌";
   }
 }
 
