@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+  background-color: #3d3d49;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #65bf97;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Custom Color Class */
+.custom-color {
+  color: #65bf97;
+  font-weight: bold;
+}
+
+/* Dice Container Styling */
+#dice-1,
+#dice-2 {
+  text-align: center;
+}
+
+#dice-1 img,
+#dice-2 img {
+  width: 120px; /* Adjust the dice size */
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Score Styling */
+#score-1,
+#score-2 {
+  font-size: 2rem;
+  color: #65bf97;
+  margin-top: 10px;
+}
+
+/* Result Box Styling */
+#resultBox {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #65bf97;
+}
+
+/* Button Styling */
+#roll-dice-btn {
+  background-color: #65bf97;
+  color: #3d3d49;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#roll-dice-btn:hover {
+  background-color: #58a47e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #resultBox {
+    font-size: 2rem;
+  }
+
+  #roll-dice-btn {
+    font-size: 1.2rem;
+  }
+
+  #dice-1 img,
+  #dice-2 img {
+    width: 90px;
+  }
+}
