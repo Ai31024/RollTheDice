@@ -38,9 +38,9 @@ Welcome to the Dice Game! This project is a simple web-based game where players 
 
 ## Credit
 
-- [Angela Yu](https://github.com/angelabauer)
-- [Ai31024](https://github.com/Ai31024)
-- [ChatGPT-4o](https://chatgpt.com)
+- [Angela Yu](https://github.com/angelabauer) (For Inspiration)
+- [Ai31024](https://github.com/Ai31024) (For My Efforts)
+- [ChatGPT-4o](https://chatgpt.com) (For Correction & Enhancement)
 
 ## License
 
