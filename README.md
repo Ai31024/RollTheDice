@@ -21,12 +21,12 @@ Welcome to the Dice Game! This project is a simple web-based game where players 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/dice-game.git
+   git clone https://github.com/Ai31024/RollTheDice.git
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd dice-game
+   cd RollTheDice
 
 3. **Ensure you have an internet connection to load Bootstrap from the CDN, or you can download Bootstrap and include it locally.**
 
